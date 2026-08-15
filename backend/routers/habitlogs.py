@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from schemas import HabitLogCreate
 import models
 from datetime import date
-from backend.auth import db_dependency, get_current_active_user
+from auth import db_dependency, get_current_active_user
 
 router = APIRouter()
 

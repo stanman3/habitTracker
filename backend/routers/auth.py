@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from schemas import UserCreate
 from fastapi.security import OAuth2PasswordRequestForm
 import models
-from backend.auth import get_current_active_user, db_dependency, authenticate_user, create_access_token, ACCESS_TOKEN_EXPIRE_MINUTES, get_password_hash
+from auth import get_current_active_user, db_dependency, authenticate_user, create_access_token, ACCESS_TOKEN_EXPIRE_MINUTES, get_password_hash
 from datetime import timedelta
 
 router = APIRouter()

@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, Depends
-from backend.auth import db_dependency, get_current_active_user
+from auth import db_dependency, get_current_active_user
 import models
 from schemas import HabitCreate
 

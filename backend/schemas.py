@@ -1,4 +1,6 @@
+from __future__ import annotations
 from pydantic import BaseModel
+from typing import Optional
 from datetime import date
 
 class TokenData(BaseModel):
@@ -29,7 +31,7 @@ class HabitResponse(BaseModel):
 
 class HabitLogCreate(BaseModel):
     habitId: int
-    date: date | None = None
+    date: Optional[date] = None
     completed: bool | None = False
 
 class HabitLogResponse(BaseModel):

@@ -21,5 +21,5 @@ class HabitLog(Base):
 
     userId = Column(Integer, ForeignKey('users.id'), primary_key=True)
     habitId = Column(Integer, ForeignKey('habits.id'), primary_key=True)
-    date = Column(Date)
+    date = Column(Date, primary_key=True)
     completed = Column(Boolean)

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  --bg: #0A0A0A;
+  --surface: #111111;
+  --card: #161616;
+  --border: #222222;
+  --border-bright: #333333;
+  --lime: #C8FF00;
+  --lime-dim: #8AAF00;
+  --lime-bg: #1A2200;
+  --orange: #FF4D00;
+  --text: #F0F0F0;
+  --muted: #555555;
+  --muted-mid: #777777;
+  --radius: 0px;
+  --mono: 'JetBrains Mono', monospace;
+  --sans: 'Space Grotesk', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: var(--sans); border: none; outline: none; }
+input, textarea, select { font-family: var(--sans); outline: none; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-bright); }
+
+.mono { font-family: var(--mono); }

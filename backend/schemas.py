@@ -31,7 +31,7 @@ class HabitResponse(BaseModel):
 
 class HabitLogCreate(BaseModel):
     habitId: int
-    date: Optional[date] = None
+    date: date
     completed: bool | None = False
 
 class HabitLogResponse(BaseModel):

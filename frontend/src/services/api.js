@@ -1,4 +1,4 @@
-const BASE = 'http://habittracker-production-54b6.up.railway.app';
+const BASE = 'https://habittracker-production-54b6.up.railway.app';
 
 const h = (token) => ({
   'Content-Type': 'application/json',

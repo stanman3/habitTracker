@@ -1,7 +1,11 @@
-from sqlalchemy.orm import declarative_base, sessionmaker
+import os
+from dotenv import load_dotenv
 from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker, declarative_base
 
-URL_DATABASE = 'postgresql://postgres:Rctvybun97.@localhost:5432/HabitTracker'
+load_dotenv()
+
+URL_DATABASE = os.getenv("DATABASE_URL", "postgresql://postgres:Rctvybun97.@localhost:5432/HabitTracker")
 
 engine = create_engine(URL_DATABASE)
 
